@@ -6,16 +6,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
-interface SliderProps {
-    continents: {
-        slug: string;
-        title: string;
-        summary: string;
-        image: string;
-    }[]
-}
 
-export default function Slider({ continents }: SliderProps) {
+
+export default function Slider() {
     return (
         <Flex w="100%" h={["250px", "450px"]} maxW="1240px" mx="auto" mb={["5", "10"]}>
             <Swiper
